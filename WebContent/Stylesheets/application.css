@@ -1,0 +1,31 @@
+/* CSS Document */
+/* css based on tehe baruch_cde_floating.css file */
+/* GLOBAL LAYOUT */
+html, body { color: #000000; text-align: left; }
+
+/* SIZE THIS TO THE PIXEL DIMENSION OF THE CONTENT YOU WISH TO DISPLAY UNDER THE BANNER */
+#wrapper { width: 768px;}
+/*#wrapper { width: 768px; background: url(../images/dropShadow.gif) repeat-y top right !important; }*/
+/* /SIZE THIS TO THE PIXEL DIMENSION OF THE CONTENT YOU WISH TO DISPLAY UNDER THE BANNER */
+
+#banner {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	text-align: left;
+	background: url(../images/bg_banner.gif) repeat-x top right !important;
+	margin-bottom: 10px;
+}
+
+#main {
+	color:#000000;
+	width: auto;
+	padding: 10px;
+	background-color: #FFFFFF;
+}
+#main tbody {background-color: #FFF;}
+.alert {
+	font-weight: bold;
+	color: #FF0000;
+}

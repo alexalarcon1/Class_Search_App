@@ -1,0 +1,111 @@
+ /* CSS Document */
+
+.alert {
+	color: #FF0000;
+	font-weight: bold;
+}
+
+/* SKIP LINKS */
+ #skip a, #skip a:hover, #skip a:visited
+{
+position:absolute;
+left:0px;
+top:-500px;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+ 
+#skip a:active
+{
+position:static;
+width:auto;
+height:auto;
+}
+
+/* LAYOUT */
+html, body { margin: 0; padding: 0; text-align: center; background-color: #10163C; color: #10163C; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 100.01%; margin-bottom: 50px; }
+img { border: none; padding: 0; margin: 0; }
+#wrapper { width: 778px; margin-right: auto; margin-left: auto; margin-top: 25px; text-align: left;}
+/*#wrapper { width: 778px; margin-right: auto; margin-left: auto; margin-top: 25px; text-align: left; background: url(../images/dropShadow.gif) repeat-y top right !important; }*/
+#baruchNav { font-size: .65em; width: 700px; margin: 0 0 0 68px; color: #1F4390; background: url(../images/bg_baruchNav.gif) repeat-x; font-weight: bold; padding: 5px 0; }
+#globalUtils { font-size: .7em; width: 768px; margin: 0; padding: 0; background-color: #FFFFCC; font-weight: normal; }
+#sectionHeader { width: 700px;  margin: 0; padding: 14px 0 0 68px; background-color: #FFFFCC; }
+#main { font-size: .75em; width: 700px; margin: 0; padding: 0 0 0 68px; background-color: #FFFFCC; }
+	#subnav { float: left; width: 180px; padding: 0 0 30px 0; }
+	#content { float: left; width: 508px; padding: 0 0 30px 0; }
+	#contentNoSubnav { float: left; width: 440px; padding: 0 0 30px 0; }
+	#rightColumn { float: right; width: 250px; margin: 10px 0 0 0; padding: 0 0 30px 0; }
+#footer { width: 768px;	clear: both; background-color: #ffffff; margin: 0 0 0 -68px; padding: 0; }
+#copyright { width: 778px; text-align: left; background-color: #10163C; color: #FFFFCC; margin-right: auto; margin-left: auto; margin-top: 0px;}
+/*#copyright { width: 778px; text-align: left; background-color: #10163C; color: #FFFFCC; margin-right: auto; margin-left: auto; margin-top: 0px; background: url(../images/dropShadow_bottom.gif) no-repeat top; }*/
+/* /LAYOUT */
+
+/* BARUCH GLOBAL NAV STYLES */
+#baruchNav ul { display: inline; text-align: right; padding: 5px; margin: 0; }
+#baruchNav ul.aboutNav { border-right: 1px solid #5F7090; }
+#baruchNav ul li { display: inline; margin: 0; padding: 0 3px; text-decoration: none; }
+#baruchNav ul li a:link, #baruchNav ul li a:visited { text-decoration: none; color: #0F1130; }
+#baruchNav ul li a.currentPage:link, #baruchNav ul li a.currentPage:visited { color: #FFFFCC; }
+/* /BARUCH GLOBAL NAV STYLES */
+
+/* GLOBAL UTILITY NAV */ 
+#globalUtils ul { text-align: right; padding: 5px 4px 0px 0px; margin: 0; }
+#globalUtils li { display: inline; padding: 0px 3px; text-decoration: none; }
+#globalUtils a:link, #globalUtils a:visited { text-decoration: none; color: #10163C; }
+#globalUtils a:hover { text-decoration: underline; }
+#globalUtils .searchButton { height:18px; width:50px; border-top: 1px solid #7690B9; border-left: 1px solid #3B4277; border-right: 1px solid #0F1130; border-bottom: 1px solid #0F1130; color: #0F1130; font-weight:bold; margin: 0 0px; background:#9EC8E9; font-size: 10px;  }
+#globalUtils form { display: inline; }
+
+#globalUtils li#inthenews { padding-left:8px; padding-right:8px; } /*Baruch in the News padding link */
+/* /GLOBAL UTILITY NAV */
+
+/* SECTION TITLE (IMAGE) */
+#sectionHeader .sectionTitle { margin: 0; padding: 0 0 10px 0; }
+#sectionHeader .splashPanel { margin: 0; padding: 0; display: block; }
+/* /SECTION TITLE (IMAGE) */
+
+/* MAIN STYLES */
+#main { line-height: 145%; }
+#main .header { margin: 0; padding: 15px 0 10px 0; }
+#main .headerImage { margin: 0; padding: 0 0 10px 0; }
+#main .halfColumn { float: left; width: 200px; padding: 0; margin-bottom: 30px; }
+#main .clear { clear: both; }
+
+#main #subnav h2  { font-size: 100%; margin: 0 0 8px 0; padding: 0; font-weight: bold; color: #10163C; }
+#main #subnav ul { padding: 0 25px 15px 0; margin: 0; list-style-type: none; }
+#main #subnav ul li { padding: 0 0 8px 0; margin: 0; }
+#main #subnav ul li a:link, #subnav ul li a:visited  { text-decoration: none; color: #10163C; border-bottom: 0; }
+#main  { text-align: center;}
+#main h1 { padding: 10px 0 20px 0; margin: 0; font-size: 1.5em; line-height: 1.5em; }
+#main h2 { padding: 0 0 10px 0; margin: 0; font-size: 1.3em; line-height: 1.3em;}
+#main h3 { padding: 0 0 10px 0; margin: 0; font-size: 1.2em; line-height: 1.2em;}
+#main h4 { padding: 0 0 10px 0; margin: 0; font-size: 1em; line-height: 1em;}
+#main h5 { padding: 0 0 10px 0; margin: 0; font-size: .90em; line-height: .90em;}
+#main h6 {  margin: 0; font-size: .80em; line-height: .70em;}
+#main img { margin: 8px 0 0 0; }
+#main p { padding: 0 40px 10px 0; margin: 0; }
+#main ul { padding: .50em 0 1em 2em; margin: 0;}
+/* display table styles */
+.displayt table, th, td {
+	text-align: center;
+	
+	border: 1px solid black;
+	
+}
+
+/*#main p a:link, #columnRight p a:visited { color: #10163C; border-bottom: 1px solid #F6F4E6; }
+#main p a:hover { border-bottom: 1px solid #FFFFCC; }*/
+#main .sidebar { float: right; width: 200px; padding: 1px 10px 10px 20px; }
+#main .sidebar ul { padding: 0 0 15px 0; margin: 0; list-style-type: none; }
+#main .sidebar ul li { padding: 0 0 8px 0; margin: 0; }
+#main .sidebar p { padding-right: 5px;}
+/*#main .sidebar ul li a:link, #columnRight .sidebar ul li a:visited  { text-decoration: underline; color: #10163C; border-bottom: 0; }*/
+#main a:link,#main a:visited  { text-decoration: underline; color: #10163C; border-bottom: 0; }
+/* /MAIN STYLES */
+
+/* FOOTER & COPYRIGHT STYLES */
+#footer img { display:inline; margin: 0 0 0 638px; padding: 5px 0 5px 0; width:128px; height: 56px;}
+#copyright p { font-size: .6em; margin: 0; padding-top: 15px;}
+#copyright a:link, #copyright a:visited { color: #FFFFCC; text-decoration: underline; }
+/* FOOTER & COPYRIGHT STYLES */
