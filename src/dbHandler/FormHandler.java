@@ -8,11 +8,7 @@ import model.*;
 
 
 public class FormHandler extends DatabaseHandler {
-	
-	public FormHandler(String username, String password, String deptId) {
-		super(/*username, password, deptId*/);
-	}
-	
+		
 	public void executeQuery(String query) {
 		try {
 			ps = this.conn.prepareStatement(query);

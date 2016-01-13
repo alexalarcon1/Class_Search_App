@@ -34,7 +34,7 @@ public class SearchServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		FormHandler form = new FormHandler("test1", "test001", "Zicklin");	
+		FormHandler form = new FormHandler();	
 		//Prepare the form for display
 		Session querySession = new Session();
 		Discipline queryDisc = new Discipline();
@@ -69,7 +69,7 @@ public class SearchServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//Once user clicks submit...
 		String action = request.getParameter("action");
-		SearchHandler search = new SearchHandler(/*"test1", "test001", "Zicklin"*/);
+		SearchHandler search = new SearchHandler();
 		
 		try{
 		//Search for classes that meet specifications
@@ -225,7 +225,6 @@ public class SearchServlet extends HttpServlet {
 			}
 		}	
 	
-
 		} catch (NullPointerException e) {
 			e.getMessage();
 			System.out.print("Caught the NullPointerException");

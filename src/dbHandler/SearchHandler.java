@@ -22,10 +22,6 @@ public class SearchHandler extends DatabaseHandler {
 					"INNER JOIN COURSE_SR crs_sr " +
 					"ON crs.crs_num = crs_sr.coursenumber AND crs.DISC = crs_sr.DISCIPLINE " +
 					"WHERE ");
-
-	public SearchHandler(/*String username, String password, String deptId*/) {
-		super(/*username, password, deptId*/);	
-	}
 	
 //Query all course by Semester
 	//Fall, Spring

@@ -18,7 +18,7 @@ public abstract class DatabaseHandler {
 	PrintWriter out = new PrintWriter(sw);
 	
 	//Connecting to Database
-	public DatabaseHandler() { /*String username, String password, String deptId*/
+	public DatabaseHandler() { 
 	//Load Driver
 		String driver = "oracle.jdbc.OracleDriver";
 	//Define connection url, username and pass
