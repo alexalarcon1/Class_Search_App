@@ -226,10 +226,12 @@ public class SearchServlet extends HttpServlet {
 		}	
 	
 
-}catch (NullPointerException e) {
-	e.getMessage();
-	System.out.print("Caught the NullPointerException");
-}
-    
-}
+		} catch (NullPointerException e) {
+			e.getMessage();
+			System.out.print("Caught the NullPointerException");
+		} finally {
+			search.closeConnection();
+		}
+
+	}
 }
