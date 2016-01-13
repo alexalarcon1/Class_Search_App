@@ -69,13 +69,11 @@ public class SearchServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//Once user clicks submit...
 		String action = request.getParameter("action");
-		
+		SearchHandler search = new SearchHandler(/*"test1", "test001", "Zicklin"*/);
 		
 		try{
 		//Search for classes that meet specifications
 		if(action.equals("doSearch")) {
-			SearchHandler search = new SearchHandler(/*"test1", "test001", "Zicklin"*/);
-			
 			//Get user's parameter choices...
 			String semester = request.getParameter("semester");
 			List<String> keywords = new ArrayList<>();
