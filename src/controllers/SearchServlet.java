@@ -69,7 +69,7 @@ public class SearchServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//Once user clicks submit...
 		String action = request.getParameter("action");
-		/*String[] gradStatus = request.getParameterValues("gradStatus");*/
+		
 		
 		try{
 		//Search for classes that meet specifications
